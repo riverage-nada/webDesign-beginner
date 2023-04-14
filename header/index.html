@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .left,
+      .right {
+        padding: 10px;
+      }
+      ul {
+        list-style: none; /* リストのマーカーを非表示 */
+        display: flex; /* リストを横並びにする */
+        align-items: center; /* リストを縦方向に中央揃え */
+      }
+      li {
+        padding: 10px; /* リストの余白を設定 */
+        border-right: 1px solid #ccc; /* 縦線を設定 */
+        text-align: left; /* リストの要素を左寄せにする */
+        flex: 1; /* リストの要素を等分割する */
+      }
+      li:last-child {
+        border-right: none; /* 最後の要素には縦線を表示しない */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">Left Element</div>
+      <div class="right">
+        <ul>
+          <li>リスト1</li>
+          <li>リスト2</li>
+          <li>リスト3</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
